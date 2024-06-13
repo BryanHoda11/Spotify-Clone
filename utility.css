@@ -1,0 +1,32 @@
+.invert {
+    filter: invert(1);
+}
+
+  /* Set the width and color of the scrollbar track */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #222;
+  }
+  
+  /* Set the color of the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #444;
+  }
+  
+  /* Set the color of the scrollbar corner */
+  ::-webkit-scrollbar-corner {
+    background-color: #222;
+  }
+  
+  /* Set the color of the scrollbar track in Firefox */
+  html {
+    scrollbar-color: #444 #222;
+  }
+  
+  /* Set the width of the scrollbar in Firefox */
+  html {
+    scrollbar-width: thin;
+  }
+  
+  
+  

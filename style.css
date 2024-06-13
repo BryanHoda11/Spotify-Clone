@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Poppins:ital,wght@1,600&family=Ubuntu:wght@400;500&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+}
+
+.left {
+    width: 25vw;
+}
+
+.container1 {
+    background-color: #121212;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.close {
+    display: none;
+}
+
+.logo {
+    width: 80px;
+    margin: 2px;
+    padding: 3px;
+}
+
+.container1 ul li {
+    width: 25px;
+    padding: 8px;
+    cursor: pointer;
+    align-items: center;
+    gap: 17px;
+    list-style: none;
+    display: flex;
+}
+
+.library {
+    margin: 5px;
+    margin-top: 10px;
+    background-color: #121212;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    max-height: 65vh;
+    overflow-y: scroll;
+}
+
+.labHead {
+    display: flex;
+}
+
+.library h2 {
+    font-size: 18px;
+    padding: 11px 0px 0px 14px;
+}
+
+.library-logo {
+    width: 23px;
+    margin: 2px;
+    padding-top: 10px;
+    padding-left: 12px;
+}
+
+.songs {
+    padding-top: 15px;
+}
+
+.song {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    position: relative;
+}
+
+.playsong {
+    position: absolute;
+    right: 6px;
+    bottom: 8px;
+    cursor: pointer;
+}
+
+h4,
+h5 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px;
+}
+
+h5 {
+    color: #908f8f;
+}
+
+h5:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer {
+    height: 55px;
+    padding: 11px;
+    margin: 5px;
+    background-color: #121212;
+    border-radius: 10px;
+    position: relative;
+}
+
+footer a {
+    text-decoration: none;
+    color: #908f8f;
+    padding: 14px;
+    font-size: 12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.foot-btn {
+    background-color: #121212;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+    border: .7px solid white;
+    width: 70px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.settings {
+    width: 20px;
+    position: absolute;
+    cursor: pointer;
+    bottom: 10px;
+    right: 5px;
+}
+
+.right {
+    width: 75vw;
+    margin: 4px;
+    background-color: #121212;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.buttons {
+    padding: 5px;
+}
+
+.span {
+    margin: -12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #908f8f;
+    font-family: 'Ubuntu', sans-serif;
+    position: block;
+}
+
+.span:hover {
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+span {
+    color: #908f8f;
+    font-size: 29px;
+    padding: 20px;
+}
+
+.signup {
+    color: #908f8f;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-right: 30px;
+}
+
+.signup:hover {
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+}
+
+.login {
+    color: black;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    width: 85px;
+    height: 45px;
+}
+
+.login:hover {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.spotifyPlaylists h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 23px;
+    padding-left: 28px;
+    padding-top: 15px;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.header2 h2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+input {
+    padding: 17px;
+    margin: 7px;
+    font-size: 17px;
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+    color: gray;
+    width: 15vw;
+    height: 3px;
+    position: relative;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px;
+    gap: 11px;
+    max-height: 65vh;
+    overflow-y: scroll;
+}
+
+.card {
+    width: 200px;
+    background-color: #181818;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card:hover {
+    background-color: #242323;
+    transition: all 1s ease-out;
+    cursor: pointer;
+}
+
+.card>* {
+    padding-top: 10px;
+}
+
+.card h3,
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card p {
+    color: #908f8f;
+    font-size: 15px;
+}
+
+.card img {
+    width: 96%;
+    object-fit: contain;
+    padding: 5px;
+}
+
+.playMusic {
+    background-color: rgb(45, 44, 44);
+    width: 98%;
+    padding: 8px;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 5px;
+    height: 45px;
+    margin: 6px 6px
+}
+
+.songButtons {
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.songButtons img {
+    cursor: pointer;
+}
+
+#previous,#play,#next{
+    height: 5vh;
+}
+
+.songinfo,
+.songtime {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    margin: 11px;
+    padding: 0 12px;
+}
+
+.songinfo {
+    width: 280px;
+}
+
+.seekbar {
+    width: 98%;
+    height: 1px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 15px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.abovebar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    width: 9px;
+    height: 9px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    transition: left 0.5s;
+}
+
+.time-vol {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.vol-img {
+    cursor: pointer;
+    width: 18px;
+    position: relative;
+    bottom: -3px;
+}
+
+.range {
+    padding: 2px;
+    position: relative;
+    width: 15vh;
+    margin: 6px;
+}
+
+/* Responsive styles */
+@media (max-width : 1300px) {
+    .left {
+        position: absolute;
+        left: -110%;
+        height: 100vh;
+        transition: all .5s;
+        z-index: 1;
+        width: 355px;
+        background-color: #121212;
+    }
+
+    .right {
+        width: 100vw;
+        height: 98vh;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .left-arrow,
+    .right-arrow {
+        display: none;
+    }
+
+    .header2 {
+        display: flex;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    input {
+        width: 31vw;
+        height: 3px;
+        font-size: 12px;
+    }
+
+    .search2 {
+        display: none;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 15px;
+    }
+
+    .span {
+        font-size: 12px;
+    }
+
+    .signup,
+    .login {
+        font-size: 13px;
+    }
+
+    .card {
+        width: 40vw;
+        margin: 3px;
+    }
+
+    .card-container {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .header2 h2 {
+        font-size: 21px;
+    }
+
+    h3,
+    p {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .playMusic {
+        width: 98%;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .abovebar {
+        align-items: center;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .songinfo,
+    .songtime {
+        width: auto;
+        font-size: 18px;
+    }
+
+    .seekbar {
+        width: 98%;
+    }
+
+    .range {
+        width: 9vh;
+    }
+
+    .time-vol {
+        gap: 11px;
+    }
+
+}
+
+@media (max-width : 500px) {
+    .playMusic {
+        height: 16vh;
+    }
+
+    .left{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .songinfo,
+    .songtime {
+        width: auto;
+        font-size: 15px;
+    }
+
+    .card {
+        width: 85vw;
+    }
+
+    .header2 h2 {
+        font-size: 18px;
+    }
+
+    span {
+        display: none;
+    }
+}
